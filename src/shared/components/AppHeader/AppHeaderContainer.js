@@ -4,9 +4,15 @@ import { connect } from 'react-redux';
 import AppHeader from './AppHeader';
 
 class AppHeaderContainer extends Component {
+
+  handleLogin = () => {
+  }
+
   render() {
     return (
-      <AppHeader />
+      <AppHeader
+        handleLogin={this.handleLogin}
+      />
     )
   }
 }
